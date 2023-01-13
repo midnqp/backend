@@ -1,7 +1,7 @@
 class ProfileService {
   static create() {}
 
-  static update(options: { imageUrl: string }) {}
+  static update() {}
 }
 
 export default ProfileService
