@@ -12,3 +12,8 @@ Strong fundamentals, but allows for exploration and extension.
 - package-lock.json — dependencies of a project often gets deprecated, updated with breaking changes, or its features removed; thus making this file non-negotiable for production deployments, as it contains accurate version information.
 - index.ts — the standard entry point of a Node.js package, with TypeScript.
 
+#### Configurations
+- .gitignore — the most complete [gitignore](https://github.com/github/gitignore) for Node.js projects.
+- tsconfig.json — the most minimal [TypeScript](https://www.typescriptlang.org/) config.
+- .prettierrc.json — the most minimal [Prettier](https://prettier.io/) config.
+
