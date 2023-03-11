@@ -17,3 +17,20 @@ Strong fundamentals, but allows for exploration and extension.
 - tsconfig.json — the most minimal [TypeScript](https://www.typescriptlang.org/) config.
 - .prettierrc.json — the most minimal [Prettier](https://prettier.io/) config.
 
+#### Folders
+- node_modules — the approach of Node.js to install packages per project in a folder.
+- .dist — the output folder for TypeScript, to deploy and run using Node.js.
+
+#### Project-specific folders
+- db — the ORM models.
+- modules — the domain code for the project, each as a module.
+
+### Rationale behind each dependency
+#### Production/runtime dependencies
+- express — the unopinionated backend framework.
+
+#### Development dependencies
+- typescript — move fast, at scale, with end-to-end type-safety.
+- jest — a testing framework, used for [TDD](https://testdriven.io/test-driven-development/).
+- prettier — a code formatter, to enforce a single coding style.
+- tsc-alias — to replace alias paths with relative paths.
