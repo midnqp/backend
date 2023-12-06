@@ -82,7 +82,22 @@ The purpose of request fields are:
 
 To get type-annotated & type-safe DTO:
 ```ts
+<<<<<<< HEAD
 // file: src/modules/user/controller.ts
+=======
+//// file: src/dto/user.ts
+const signup = {
+	body : joi.object({
+		userType  : joi.string().required().valid(userTypeList),
+		password  : joi.string().password.required(),
+		mobile    : joi.string().optional(),
+		firstName : joi.string().required(),
+		email     : joi.string().email().required(),
+	}).required(),
+}
+
+//// file: src/modules/user/index.ts
+>>>>>>> 9b088bb (Update README.md)
 import {Request} from 'express'
 import dto from '@src/dto'
 
