@@ -8,6 +8,9 @@
 </p>
 <hr></hr>
 
+<img height=450px width=auto src=https://user-images.githubusercontent.com/90899789/177304942-f50b8073-cd1c-4e18-9f6c-281903d4a710.gif />
+
+
 The purpose of the guidelines are:
 - to bring consistency & uniformity in Node.js backend code
 - to enable developers to focus on the business value, instead of the backend application itself
@@ -19,8 +22,14 @@ The purpose of the guidelines are:
 Some files are added as examples in the folder structure.
 
 ### Features
+<<<<<<< HEAD
 - Simple & scalable project structure
 - Consistent dev environment
+=======
+
+1. Simple & scalable project structure
+2. Consistent dev environment
+>>>>>>> f8d451b (Update README.md)
 	- precommit hooks to format code, for uniformity in code style
 	- support for multiple platform i.e. Windows, Mac, Linux
 - TypeScript-integrated ORM, Sequelize
