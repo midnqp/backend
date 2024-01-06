@@ -1,3 +1,6 @@
-import modules from "@/modules/index.js";
+import express from 'express'
+import modules from '@/routers.js'
 
-console.log("Hello, world!", modules.name);
+const app = express()
+app.use('/v1/', modules)
+app.listen(8080)
