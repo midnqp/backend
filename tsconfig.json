@@ -6,6 +6,10 @@
 
         "skipLibCheck": true,
         "strict":true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+
+        
         "rootDir": ".",
         "outDir": ".dist",
 
