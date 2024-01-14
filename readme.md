@@ -62,8 +62,8 @@ export default router
 ```
 
 2. Add a new folder named after the module `profile`. Then, add 4 new files in the folder.
-   - `src/profile/``router.ts` containing the Express routes with anonymous controller functions similar to [Nest](https://nestjs.com/).
-   - `src/profile/``service.ts` containing the domain logic in the plainest language.
-   - `src/profile/``dto.ts` containing request body validation code.
-   - `src/profile/``model.ts` containing the database accesss object.
-   - `src/profile/``repo.ts` containing a class with methods that allow loose coupling of the database and  domain.
+   - `src/profile/` `router.ts` containing the Express routes with anonymous controller functions.
+   - `src/profile/` `service.ts` containing the domain logic in the plainest language.
+   - `src/profile/` `dto.ts` containing request body validation code.
+   - `src/profile/` `model.ts` containing the database access object.
+   - `src/profile/` `repo.ts` containing a class with methods that allow loose coupling of the database and  domain.
