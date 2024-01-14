@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int     @id @default(autoincrement())
+  username  String
+  profile   Profile? // ? is because, it's possible to create a user without a profile on the db.
+  profileId Int     @unique // set @unique for 1:1 relation
+}
+
+model Profile {
+  id       Int     @id @default(autoincrement())
+  fullName String?
+  User     User @relation(fields: [id], references: [profileId]) // to know where to put this @relation, ask: which table is created later? in this case, the user table is more essential.
+}
