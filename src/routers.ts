@@ -1,7 +1,7 @@
-import {Router} from 'express'
-import user from '@/user/router.js'
+import express from "express";
+import math from "@/math/router.js";
 
-const router = Router()
-router.use('/users', user)
+const router = express.Router();
+router.use("/maths", math);
 
-export default router
+export default router;

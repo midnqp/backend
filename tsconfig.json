@@ -6,8 +6,6 @@
 
         "skipLibCheck": true,
         "strict":true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
 
         
         "rootDir": ".",
@@ -17,5 +15,6 @@
         "paths": {
             "@/*": ["./src/*"]
         }
-    }
+    },
+    "include": ["./src/*"]
 }

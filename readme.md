@@ -22,7 +22,7 @@ Strong fundamentals, but allows for exploration and extension.
 
 #### Folders
 
-- node_modules — the approach of Node.js to install packages per project in a folder.
+- node_modules — the approach of Node.js to install dependencies per project in a folder.
 - .dist — the output folder for TypeScript, to deploy and run using Node.js.
 
 #### Project-specific folders
@@ -47,7 +47,9 @@ Strong fundamentals, but allows for exploration and extension.
 
 #### How to add a new module?
 
-1. The main `src/index.ts` starts the backend. Using the main module in `src/router.ts`, which is the SPOT (single point of truth) for all modules of the project. So, first, we append a new module.
+##### Step 1
+
+The main `src/index.ts` starts the backend. Using the main module in `src/router.ts`, which is the SPOT (single point of truth) for all modules of the project. So, first, we append a new module.
 
 ```diff
 import {Router} from 'express'
@@ -61,7 +63,9 @@ router.use('/users', user)
 export default router
 ```
 
-2. Add a new folder named after the module `profile`. Then, add 4 new files in the folder.
+##### Step 2
+
+Add a new folder named after the module `profile`. Then, add 4 new files in the folder.
    - `src/profile/` `router.ts` containing the Express routes with anonymous controller functions.
    - `src/profile/` `service.ts` containing the domain logic in the plainest language.
    - `src/profile/` `dto.ts` containing request body validation code.
